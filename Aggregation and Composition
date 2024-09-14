@@ -1,0 +1,61 @@
+package core;
+class Charger{
+	private String brand;
+	private float Voltage;
+	
+	Charger(String brand,float Voltage){
+		this.brand=brand;
+		this.Voltage=Voltage;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public float getVoltage() {
+		return Voltage;
+	}
+	
+}
+class Os{
+	String name;
+	int size;
+	public Os(String name, int size) {
+		super();
+		this.name = name;
+		this.size = size;
+	}
+	public String getName() {
+		return name;
+	}
+	public int getSize() {
+		return size;
+	}
+}
+
+class Mobile{
+	 Os os=new Os("LINUX",4 );
+	
+	 public void hasa(Charger c) {
+		 System.out.println(c.getBrand());
+		 System.out.println(c.getVoltage());
+	 }
+}
+
+public class Day42 {
+public static void main(String []args) {
+	 Charger c=new Charger("REALME", 4.5f);
+	  Mobile m=new Mobile();
+	  System.out.println(m.os.getName());
+	  System.out.println(m.os.getSize());
+
+	  m.hasa(c);
+	  m=null;
+
+	  System.out.println(c.getBrand());
+	  System.out.println(c.getVoltage());
+}
+}
+
+
+
+
+
