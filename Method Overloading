@@ -1,0 +1,45 @@
+package core;
+
+
+
+
+class Calculate{
+	void add(int a,int b) {
+		System.out.println(a+b);
+	}
+	void add(int a,float b) {
+		System.out.println(a+b);
+	}
+	void add(int a,float b,double c) {
+		System.out.println(a+b+c);
+	}
+	void add(float a,double b) {
+		System.out.println(a+b);
+	}
+	void add(float a,int b,double c) {
+		System.out.println(a+b+c);
+	}
+	void add(int a,int b,int c) {
+		System.out.println(a+b+c);
+	}
+	
+}
+
+
+
+public class Day22 {
+
+	public static void main(String[] args) {
+		
+		Calculate calc=new  Calculate();
+
+		calc.add(100,400,600);
+		calc.add(340.45f,2343,543.6574);
+		calc.add(200,400);
+		calc.add(400, 340.65f);
+		calc.add(300,987.34f, 654.3492);
+		calc.add(345.76f,654.876);
+		
+	}
+
+}
